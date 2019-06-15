@@ -1,0 +1,167 @@
+@charset "UTF-8";
+
+.nav-menu-res {
+  z-index: 99;
+  width: 100%;
+  height: 50px;
+  position: absolute;
+}
+
+.menu-hide{
+  left: -210px;
+  position: fixed;
+  top: 0px;
+  transition: all .5s ease-in-out;
+  text-align: center;
+  z-index: 50;
+  padding-top: 6vh;
+}
+
+.show{
+  left: 20px;
+  transition: all .5s ease-in-out;
+}
+
+.hamburger_div {
+  position: absolute;
+  display: block;
+  left: 25px;
+  top: 20px;
+  z-index: 99;
+  width: 30px;
+  transition: 0.5s ease-in-out;
+  text-align: right;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + #contentDos {
+  padding-top: 50px;
+}
+
+.menuicon {
+  background-color: #fff;
+  height: 3px;
+  width: 100%;
+  margin-bottom: 4px;
+  transition: 0.3s;
+  float: right;
+}
+
+.menuicon_first {
+  transform: rotate(45deg) translateX(1px) translateY(-5px);
+  transform-origin: top left;
+}
+
+.menuicon_second {
+  opacity: 0;
+}
+
+.menuicon_third {
+  transform: rotate(-45deg) translateX(1px) translateY(5px);
+  transform-origin: bottom left;
+}
+
+.menuicon--black {
+  background-color: #000;
+}
+
+.menures {
+  text-align: left;
+  padding: 20px;
+  background-color: rgba(0,0,0, 0.8);
+  border-radius: 20px;
+}
+
+.menures li {
+  list-style-type: none;
+  position: relative;
+  margin: 5px 0;
+}
+
+.menures a {
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  transition: 0.5s;
+}
+
+.menu_active {
+  height: 1em;
+  background-color: #fff;
+  width: 2px;
+  display: inline-block;
+  position: absolute;
+  left: -5px;
+  bottom: 5px;
+}
+
+.brochure__logo {
+  margin-top: 20px;
+}
+
+
+@media (min-width: 992px) {
+
+
+.menu_full {
+  display: block;
+  margin-top: 50px;
+}
+
+.menu__full-list {
+  list-style-type: none;
+}
+
+.menu__full-list img {
+  width: 120px;
+}
+
+.menu__full-list-img-black {
+  display: none;
+}
+
+.menu__full-list-link {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+
+.menu__full-list-link-grey {
+  color: #818589;
+}
+
+.menu-title {
+  padding-left: 40px;
+  margin: 8px 0;
+  font-weight: 400;
+}
+
+.menu__full-list-link-select {
+  font-weight: 600;
+  color: #000;
+}
+
+.menu__full-list-link-select-black {
+  font-weight: 600;
+  color: #000;
+}
+
+}
+
+
+
+@media (min-width: 1200px) {
+
+}
+
+
+
+@media (min-width: 1440px) {
+
+}

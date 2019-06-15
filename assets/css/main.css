@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+.main_header {
+  position: relative;
+  text-align: center;
+}
+
+/* HEADER FLEXSLIDER BACKGROUND STYLE */
+
+.main_header .flexslider {
+  border: none;
+}
+
+.main_header .flexslider .flex-control-nav {
+  width: auto;
+  position: absolute;
+  bottom: 45%;
+  text-align: center;
+  right: 10px;
+}
+
+.main_header .flexslider .flex-control-nav li {
+    margin: 6px 0;
+    display: block;
+    zoom: 1;
+}
+
+.main_header .flexslider .flex-control-paging li a {
+    background: transparent;
+    border: 1px solid rgba(255,255,255, 0.6);
+}
+
+.main_header .flexslider .flex-control-paging li a.flex-active {
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.main_header .flexslider .flex-direction-nav {
+  display: none;
+}
+
+/* HEADER BACKGROUNDS */
+
+.main_header_slide {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.header_slide_1 {
+  background-image: url('../images/portada-1.jpg');
+}
+
+.header_slide_2 {
+  background-image: url('../images/portada-2.jpg');
+}
+
+.header_slide_3 {
+  background-image: url('../images/portada-3.jpg');
+}
+
+.main_header_overlay {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  padding: 0 12vw;
+}
+
+.main_header_title {
+  padding-top: 35vh;
+  width: 280px;
+}
+
+.main_header_logo {
+  width: 50%;
+  position: absolute;
+  left: 50%;
+  margin-left: -25%;
+  bottom: 20%;
+  margin-bottom: -20%;
+}
+
+.main_header_logo img {
+  width: 100%;
+}

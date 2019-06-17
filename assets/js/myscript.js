@@ -26,3 +26,12 @@
 		}
 		console.log(e.target)
 	})
+
+
+
+	// TEST
+
+	$(".inmobiliaria__article").hover(function(){
+		$(this).children('.inmobiliaria__article_text').children('.inmobiliaria_article-hidden-text').toggleClass("inmobiliaria_article-hidden-text-show");
+		$(this).toggleClass('inmobiliaria__article-resize');
+	});

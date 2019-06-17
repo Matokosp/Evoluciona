@@ -8,6 +8,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Libre Franklin', sans-serif;
+  font-size: 12px;
+  color: #6D6E71;
 }
 
 .main_header {
@@ -19,6 +21,7 @@ body {
 
 .main_header .flexslider {
   border: none;
+  margin-bottom: 0;
 }
 
 .main_header .flexslider .flex-control-nav {
@@ -27,6 +30,7 @@ body {
   bottom: 45%;
   text-align: center;
   right: 10px;
+  /* z-index: 5; */
 }
 
 .main_header .flexslider .flex-control-nav li {
@@ -69,6 +73,8 @@ body {
   background-image: url('../images/portada-3.jpg');
 }
 
+/* HEADER OVERLAY */
+
 .main_header_overlay {
   position: absolute;
   width: 100%;
@@ -95,3 +101,55 @@ body {
 .main_header_logo img {
   width: 100%;
 }
+
+/* INMOBILIARIA SECTION */
+
+.inmobiliaria_section {
+  margin: 40px 0 20px 0;
+  padding: 0 6vw;
+  text-align: center;
+}
+
+.inmobiliaria__articles_section {
+  margin: 40px 0;
+}
+
+.inmobiliaria__article {
+  background-color: #EDEBEA;
+  padding: 25px;
+  margin: 15px 0;
+  transition: 0.6s;
+}
+
+.inmobiliaria__article_title {
+  font-size: 1.7rem;
+  color: #6D6E71;
+  margin: 0;
+}
+
+.inmobiliaria__article_line {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: #6D6E71;
+  margin: 10px auto 0 auto;
+}
+
+.inmobiliaria__article_text {
+  font-size: 1.2em;
+}
+
+.inmobiliaria_article-hidden-text {
+  display: none;
+  transition: 0.5s;
+}
+
+/* @keyframes show {
+  0%, 50% {
+    display: block;
+    visibility: hidden;
+  }
+  60% {
+    visibility: visible;
+  }
+} */

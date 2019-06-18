@@ -18,6 +18,21 @@
     text-align: center;
   }
 
+  /* PROYECT CONTENT VISIBLE ON MOBILE VERSION */
+
+  .proyecto__item-title--mobile {
+    font-size: 2rem;
+    font-weight: 300;
+  }
+
+  .proyecto__item-list--mobile {
+    font-size: 1.2rem;
+  }
+
+  .proyecto__item-description--mobile {
+    font-size: 1.2rem;
+  }
+
 
 }
 
@@ -55,16 +70,16 @@
 
   /* INMOBILIARIA SECTION */
 
-  .inmobiliaria_section {
+  .inmobiliaria__section {
     max-width: 1200px;
     margin: 10vh auto;
     padding: 0 5%;
     text-align: center;
   }
 
-  .inmobiliaria_section-text {
+  .inmobiliaria__section-text {
     font-size: 1rem;
-    padding: 0 10%;
+    padding: 0 15%;
   }
 
   .inmobiliaria__articles_section {
@@ -83,11 +98,11 @@
     vertical-align: middle;
     width: 33.3%;
     height: 170px;
-    transition: all 0.8s;
+    transition: all 0.5s;
     margin: 0 10px;
   }
 
-  .inmobiliaria_article-hidden-text {
+  .inmobiliaria__article-hidden-text {
     display: none;
     visibility: visible;
   }
@@ -96,11 +111,9 @@
     0% {
       opacity: 0;
     }
-    95% {
-      display: block;
-    }
     100% {
       opacity: 1;
+      display: block
     }
   }
 
@@ -110,7 +123,55 @@
 
   .inmobiliaria_article-hidden-text-show {
     display: inline;
-    animation: show 0.8s forwards;
+    animation: show 1s forwards;
+  }
+
+
+  /* PROYECTOS SECTION */
+
+  .proyectos__flex {
+    display: flex;
+    flex-direction: row;
+    /* height: 100vh; */
+    margin: 5vh 0;
+  }
+
+  .proyecto__item {
+    height: 80vh;
+    width: 20%;
+    background-position: top center;
+  }
+
+  /* PROYECT ITEM STYLE AND RESIZE CLASS */
+
+  .proyecto__item-retract {
+    height: 80vh;
+    width: 12.5%;
+  }
+
+  .proyecto__item-expand {
+    height: 80vh;
+    width: 50%;
+  }
+
+  .uno {
+    background-image: url('../images/lovial-bkg-web.jpg');
+  }
+
+  .dos {
+    background-image: url('../images/vendimia-bkg-web.jpg');
+  }
+
+  .tres {
+    background-image: url('../images/piedemonte-bkg-web.jpg');
+  }
+
+  .cuatro {
+    background-image: url('../images/piedemonte-bkg-web.jpg');
+  }
+
+  .cinco {
+    background-image: url('../images/loovalle-bkg-web.jpg');
   }
 
 

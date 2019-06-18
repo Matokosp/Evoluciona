@@ -104,7 +104,7 @@ body {
 
 /* INMOBILIARIA SECTION */
 
-.inmobiliaria_section {
+.inmobiliaria__section {
   margin: 40px 0 20px 0;
   padding: 0 6vw;
   text-align: center;
@@ -139,17 +139,142 @@ body {
   font-size: 1.2em;
 }
 
-.inmobiliaria_article-hidden-text {
+.inmobiliaria__article-hidden-text {
   display: none;
   transition: 0.5s;
 }
 
-/* @keyframes show {
-  0%, 50% {
-    display: block;
-    visibility: hidden;
-  }
-  60% {
-    visibility: visible;
-  }
-} */
+/* PROYECTOS SECTION */
+
+.proyectos__section {
+  margin: 5vh 0;
+}
+
+.proyectos__title {
+  display: block;
+  margin: 0 auto;
+  max-width: 320px;
+}
+
+.proyectos__flex {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 5vh 0;
+}
+
+.proyecto__item {
+  height: 20%;
+  transition: 0.6s ease-in-out;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  position: relative;
+}
+
+/* PROYECT ITEM STYLE AND RESIZE CLASS */
+
+.proyecto__item-retract {
+  height: 10%;
+}
+
+.proyecto__item-expand {
+  height: 60%;
+}
+
+.uno {
+  background-image: url('../images/lovial-bkg.jpg');
+}
+
+.dos {
+  background-image: url('../images/vendimia-bkg.jpg');
+}
+
+.tres {
+  background-image: url('../images/piedemonte-bkg.jpg');
+}
+
+.cuatro {
+  background-image: url('../images/piedemonte-bkg.jpg');
+}
+
+.cinco {
+  background-image: url('../images/loovalle-bkg.jpg');
+}
+
+
+/* PROYECT TITLE VISIBLE FOR ALL SCREENS */
+.proyecto__item-title {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+
+.proyecto__item-title-h3 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  margin: 0;
+  font-weight: 300;
+  display: inline-block;
+  vertical-align: middle;
+  opacity: 1;
+  transition: 1s;
+}
+.proyecto__item-title-h3-hide {
+  opacity: 0;
+}
+
+.proyecto__item-title span {
+  vertical-align: middle;
+  display: inline-block;
+  width: 20px;
+}
+
+.proyecto__item-title span img {
+  width: 100%;
+}
+
+/* PROYECT CONTENT VISIBLE ON MOBILE VERSION */
+
+.proyecto__item-content--mobile {
+  background-color: rgba(0, 0, 0, 0.4);
+  background-blend-mode: multiply;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  transition: 1s;
+}
+
+.proyecto__item-content--mobile-show {
+  opacity: 1;
+}
+
+.proyecto__item-title--mobile {
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+.proyecto__item-line--mobile {
+  width: 30px;
+  background-color: #fff;
+  height: 3px;
+}
+
+.proyecto__item-list--mobile {
+  list-style: none;
+  padding: 0;
+  width: 60%;
+  font-size: 0.9rem;
+}
+
+.proyecto__item-description--mobile {
+  width: 60%;
+  font-size: 0.9rem;
+}

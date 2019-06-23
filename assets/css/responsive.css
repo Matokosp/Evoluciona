@@ -230,15 +230,36 @@
 
   /* The Modal (background) */
   .modal {
-    display: none; /* Hidden by default */
+    display: block; /* Hidden by default */
     position: fixed; /* Stay in place */
-    z-index: 99; /* Sit on top */
+    z-index: -99; /* Sit on top */
+    opacity: 0;
     left: 0;
     top: 0;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     background-color: rgb(255,255,255); /* Fallback color */
-    background-color: rgba(255,255,255,0.6); /* Black w/ opacity */
+    background-color: rgba(255,255,255,0.8); /* Black w/ opacity */
+    transition: 0.3s;
+  }
+
+  @keyframes modalShow {
+    0% {
+      z-index: -99;
+      opacity: 0;
+    }
+    50% {
+      z-index: 99;
+      opacity: 0;
+    }
+    100% {
+      z-index: 99;
+      opacity: 1;
+    }
+  }
+
+  .modal-show {
+    animation: modalShow 0.7s forwards;
   }
 
   /* Modal Content */

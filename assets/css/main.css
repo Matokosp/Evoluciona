@@ -255,11 +255,13 @@ body {
   align-items: center;
   flex-direction: column;
   opacity: 0;
-  transition: 0.5s;
+  transition: 0.2s;
+  transform: scale(0.5);
 }
 
 .proyecto__item-content--mobile-show {
   opacity: 1;
+  transform: scale(1);
 }
 
 .proyecto__item-content-title--mobile {
@@ -283,4 +285,10 @@ body {
 .proyecto__item-description--mobile {
   width: 60%;
   font-size: 0.9rem;
+}
+
+/* PROYECT CONTENT VISIBLE ON DESKTOP VERSION */
+
+.proyecto__item-content-desktop {
+  display: none;
 }

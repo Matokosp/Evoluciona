@@ -220,7 +220,13 @@
     display: none;
   }
 
-  /* MODAL BOX FOR PROYECTS */
+  /* PROYECT CONTENT VISIBLE ON DESKTOP VERSION */
+
+  .proyecto__item-content-desktop {
+    display: block;
+  }
+
+  /* modal box for proyects */
 
   /* The Modal (background) */
   .modal {
@@ -259,8 +265,14 @@
   }
 
   /* MODAL BOX FLEXSLIDER */
+
   .modal-content .flexslider {
-    width: 40%;
+    width: 60%;
+    border: 0;
+  }
+
+  .modal-content .flexslider .slides img {
+    height: 100vh;
   }
 
 }

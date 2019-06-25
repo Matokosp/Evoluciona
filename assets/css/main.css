@@ -506,6 +506,8 @@ input[type=submit]:hover {
 }
 
 .footer p {
+  -webkit-appearance: none;
+  -moz-appearance: none;
   color: #fff;
   margin: 3px;
 }

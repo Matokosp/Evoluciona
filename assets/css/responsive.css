@@ -33,6 +33,23 @@
     font-size: 1.2rem;
   }
 
+  /* PASOS FLEX */
+
+  .pasos__flex {
+    max-width: 500px;
+  }
+
+
+}
+
+@media (min-width: 999px) and (orientation: portrait) {
+
+  /* FUTURO SECTION */
+
+  .futuro__section {
+    background-color: #404041;
+    padding: 5vh 20vw;
+  }
 
 }
 
@@ -297,6 +314,24 @@
     height: 100vh;
   }
 
+  .modal-content .flexslider .flex-control-nav {
+    width: 100%;
+    position: absolute;
+    bottom: 30px;
+    text-align: center;
+  }
+
+  .modal-content .flexslider .flex-control-paging li a {
+    background: #fff;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+  .modal-content .flexslider .flex-control-paging li a.flex-active {
+    background: #fff;
+    background: rgba(255, 255, 255, 0.9);
+    cursor: default;
+  }
+
   /* MODAL BOX TEXT */
 
   .modal__text {
@@ -315,7 +350,9 @@
   }
 
   .modal__text-title {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #545759;
   }
 
   .modal__text-separation {
@@ -329,10 +366,182 @@
     list-style-type: none;
     padding: 0;
     font-size: 1rem;
+  font-weight: 500;
   }
 
   .modal__text-caracteristicas {
     font-size: 1rem;
+  font-weight: 500;
+  color: #545759;
+  }
+
+  /* EQUIPO SECTION */
+
+  .equipo__title {
+    margin: 10vh auto 5vh auto;
+  }
+
+  .experiencia__flex {
+    display: flex;
+    background-color: #EDEBEA;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 12vh 15%;
+    max-width: 2000px;
+  }
+
+  .experiencia__item {
+    width: 25%;
+    text-align: center;
+    vertical-align: top;
+    padding: 0 5%;
+  }
+
+  .experiencia__item p {
+    font-size: 1rem;
+  }
+
+  /* FUTURO SECTION */
+  .futuro__section {
+    position: relative;
+    max-width: 2000px;
+    background-color: #404041;
+    padding: 10vh 18% 15vh 18%;
+  }
+
+  .futuro__title {
+    max-width: 400px;
+    margin-bottom: 120px;
+  }
+
+  /* FUTURO ITEMS EXPAND */
+
+  .futuroExpander {
+      display: block;
+      position: relative;
+  }
+
+  .futuroExpander .futuro__expander-head {
+      display: inline-block;
+      width: 40%;
+      cursor:pointer;
+      vertical-align: top;
+  }
+
+  .futuro__expander-head h2 {
+    width: 40px;
+  }
+
+  .futuro__expander-head span {
+    vertical-align: middle;
+    display: inline-block;
+    font-size: 1.6rem;
+    margin-left: 10px;
+  }
+
+
+  .futuroExpander:not(.expanded) .futuro__expander-content {
+       display: none;
+  }
+
+  .futuro__expander-content {
+      display: inline-block;
+      position: absolute;
+      width: 50%;
+      vertical-align: top;
+      left: 50%;
+  }
+
+  .futuroExpander .futuro__expander-content p {
+      font-size: 1rem;
+  }
+
+  .content-uno {
+    top: 0%;
+  }
+
+  .content-dos {
+    /* width: 50%; */
+    top: -450%;
+  }
+
+  .content-tres {
+    top: -400%;
+  }
+
+  /* PASOS FLEX */
+
+  .paso__item img {
+    width: 100px;
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  /* CONTACT SECTION */
+
+  .contact__section {
+    max-width: 2500px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .contact__background {
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+      width: 50%;
+      height: 100%;
+      background-color: #EDEBEA;
+      z-index: -1;
+  }
+
+  .contact__section > h2 {
+    margin: 0;
+    padding-top: 5vh;
+  }
+
+  .contact__flex-desktop {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 10vh 0;
+  }
+
+  .contact__text {
+    font-size: 1rem;
+    width: 50%;
+    margin: 0;
+    padding: 0 15%;
+  }
+
+  .contact__form {
+    width: 50%;
+    padding: 0 10%;
+  }
+
+  /* FOOTER */
+
+  .footer {
+    background-color: #404041;
+    text-align: center;
+    padding: 30px 5vw;
+  }
+
+  .footer__img {
+    max-width: 150px;
+    margin-bottom: 0;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10%;
+  }
+
+  .footer p {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0.7rem;
   }
 
 }

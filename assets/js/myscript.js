@@ -63,47 +63,6 @@ const md = window.matchMedia( "(min-width: 1000px)" );
 
 		});
 
-		// var elements = document.getElementsByClassName("proyecto__item");
-		// 	for(var i = 0; i < elements.length; i++)
-		// 	{
-		// 			elements[i].onclick = function(){
-		//
-		// 					// remove class from sibling
-		//
-		// 					var el = elements[0];
-		// 					while(el)
-		// 					{
-		// 							if(el.tagName === "ARTICLE"){
-		// 									//remove class
-		// 									el.classList.toggle("proyecto__item-retract");
-		//
-		// 							}
-		// 							// pass to the new sibling
-		// 							el = el.nextSibling;
-		// 					}
-		//
-		// 				this.classList.toggle("proyecto__item-expand");
-		// 			};
-		// 	}
-
-		// $('.proyecto__item').click(function(e) {
-		// 	var expanded = $(this);
-		//
-		// 	$('.proyecto__item').not(this).toggleClass('proyecto__item-retract');
-		// 	expanded.toggleClass('proyecto__item-expand');
-		// 	e.stopPropagation();
-		// 	expanded.children('.proyecto__item-content--mobile').toggleClass('proyecto__item-content--mobile-show');
-		// 	expanded.children('.proyecto__item-title--mobile').children('.proyecto__item-title-h3').toggleClass('proyecto__item-title-h3-hide');
-		//
-		// })
-
-		// window.addEventListener('click', function(e) {
-		// 	var target = e.target
-		// 	if (target = $('.proyecto__item')) {
-		// 		target.addClass('proyecto__item-expand');
-		// 		target.siblings('.proyecto__item').addClass('proyecto__item-retract');
-		// 	}
-		// })
 	}
 
 	if (md.matches) {
@@ -137,22 +96,19 @@ const md = window.matchMedia( "(min-width: 1000px)" );
 		$('.modal').removeClass('modal-show');
 	})
 
-	// // Get the modal
-	// var modal = document.getElementById("myModalOne");
-	// // Get the button that opens the modal
-	// var btn = document.getElementById("myBtn");
-	// // Get the <span> element that closes the modal
-	// var span = document.getElementsByClassName("close")[0];
-	// // When the user clicks the button, open the modal
-	// btn.onclick = function() {
-	//   modal.classList.add("modal-show");
-	// }
-	// // When the user clicks on <span> (x), close the modal
-	// span.onclick = function() {
-	//   modal.classList.remove("modal-show");	}
-	// // When the user clicks anywhere outside of the modal, close it
-	// window.onclick = function(event) {
-	//   if (event.target == modal) {
-	//     modal.style.display = "none";
-	//   }
-	// }
+
+// FUTURO EXPAND ITEMS
+
+if (md.matches) {
+
+	$(document).ready(function () {
+	$(".futuroExpander .futuro__expander-head").hover(function () {
+		$(this).find('.sign').html('>');
+		$('.futuro__expander-content').not($(this).nextAll('.futuro__expander-content')).hide().prevAll('.futuro__expander-head').find('.sign').html('');
+	    $(this).nextAll('.futuro__expander-content').fadeIn().css('display', 'inline-block')(function() {
+	      $(this).closest('.futuroExpander').addClass('expanded');
+	    });
+	});
+	});
+
+}

@@ -10,6 +10,8 @@ const md = window.matchMedia( "(min-width: 1000px)" );
 		$('#menuIconFirst').toggleClass('menuicon_first');
 		$('#menuIconSecond').toggleClass('menuicon_second');
 		$('#menuIconThird').toggleClass('menuicon_third');
+		$('.menuicon').toggleClass('menuicon--black');
+		$('.hamburger_div').toggleClass('hamburger_div--black');
 	}
 	$('#hamburger').on('click', function(e){
 		desplazar();
@@ -25,10 +27,47 @@ const md = window.matchMedia( "(min-width: 1000px)" );
 			$('#menuIconFirst').removeClass('menuicon_first');
 			$('#menuIconSecond').removeClass('menuicon_second');
 			$('#menuIconThird').removeClass('menuicon_third');
+			$('.menuicon').removeClass('menuicon--black');
+			$('.hamburger_div').removeClass('hamburger_div--black');
 			e.stopPropagation();
 		}
 		console.log(e.target)
 	})
+
+	// MENU COLOR CHANGE
+
+	var header = $('#header').offset();
+	var inmobiliaria = $('#inmobiliaria').offset();
+	var proyectos = $('#proyectos').offset();
+	var equipo = $('#equipo').offset();
+	var inversionistas = $('#inversionistas').offset();
+	var postVenta = $('#postVenta').offset();
+
+	window.addEventListener('scroll', function(){
+		if ($(window).scrollTop() >= inmobiliaria.top - 100) {
+			$('.menuicon').addClass('menuicon--black');
+			$('.hamburger_div').addClass('hamburger_div--black');
+		} else {
+			$('.menuicon').removeClass('menuicon--black');
+			$('.hamburger_div').removeClass('hamburger_div--black');
+		}
+
+		if ($(window).scrollTop() >= proyectos.top) {
+			$('.menuicon').removeClass('menuicon--black');
+			$('.hamburger_div').removeClass('hamburger_div--black');
+		}
+
+		if ($(window).scrollTop() >= equipo.top -100) {
+			$('.menuicon').addClass('menuicon--black');
+			$('.hamburger_div').addClass('hamburger_div--black');
+		}
+
+		if ($(window).scrollTop() >= inversionistas.top - 50) {
+			$('.menuicon').removeClass('menuicon--black');
+			$('.hamburger_div').removeClass('hamburger_div--black');
+		}
+	})
+
 
 	// Inmobiliaria items resize divs
 

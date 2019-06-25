@@ -16,6 +16,7 @@ body {
 .main_header {
   position: relative;
   text-align: center;
+  height: 100vh;
 }
 
 /* HEADER FLEXSLIDER BACKGROUND STYLE */

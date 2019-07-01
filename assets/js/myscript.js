@@ -18,6 +18,7 @@ const md = window.matchMedia( "(min-width: 1000px)" );
 		e.stopPropagation();
 		menuHideShow = $('.nav-menu-res').children(".menu-hide").hasClass('show');
 		console.log(menuHideShow)
+
 	})
 
 	window.addEventListener('click', function(e){

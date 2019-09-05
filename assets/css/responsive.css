@@ -3,11 +3,11 @@
 @media (min-width: 768px) and (orientation: portrait) {
 
   .main_header_title {
-    max-width: 300px;
+    max-width: 350px;
   }
 
   .main_header_title-2 {
-    max-width: 390px;
+    max-width: 300px;
   }
 
   .main_header_title-3 {
@@ -85,17 +85,17 @@
 
   .main_header_title {
     padding-top: 40vh;
-    max-width: 400px;
+    max-width: 520px;
   }
 
   .main_header_title-2 {
     padding-top: 40vh;
-    max-width: 590px;
+    max-width: 370px;
   }
 
   .main_header_title-3 {
     padding-top: 40vh;
-    max-width: 490px;
+    max-width: 440px;
   }
 
   .main_header_logo {
@@ -429,7 +429,7 @@
     position: relative;
     max-width: 2000px;
     background-color: #404041;
-    padding: 10vh 18% 15vh 18%;
+    padding: 10vh 10% 15vh 10%;
   }
 
   .futuro__title {
@@ -437,7 +437,154 @@
     margin-bottom: 120px;
   }
 
+
+  /* PRUEBA NUEVA */
+
+  /* --------- */
+
+  .futuro_sections {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .futuro_steps {
+    width: 35%;
+  }
+
+  .futuro_steps_item {
+    cursor: pointer;
+    margin: 30px 0;
+    display: block;
+  }
+
+  .futuro_steps_item_focus .steps_item_number {
+    color: #fff;
+  }
+
+  .futuro_steps_item_focus .steps_item_title {
+    color: #fff;
+  }
+
+  .futuro_steps_item_focus .steps_item_line  {
+    background-color: #fff;
+  }
+
+  .steps_item_number {
+    color: #808285;
+    vertical-align: middle;
+    display: inline-block;
+    margin: 0;
+    font-weight: 300;
+    font-size: 1.8rem;
+    transform: rotate(-90deg) translateX(0.5rem);
+    transform-origin: center center;
+    width: 3rem;
+  }
+
+  .steps_item_title {
+    color: #808285;
+    vertical-align: middle;
+    display: inline-block;
+    margin: 0;
+    font-size: 1.3rem;
+    font-weight: 300;
+  }
+
+  .steps_item_line {
+    vertical-align: middle;
+    display: inline-block;
+    background-color: #808285;
+    height: 2.5rem;
+    width: 2px;
+    margin: 0 10px;
+  }
+
+  .forward {
+    color: #fff;
+    font-size: 1.8rem;
+    vertical-align: middle;
+    margin-left: 20px;
+    display: none;
+  }
+
+  .forward-show {
+    display: inline-block;
+  }
+
+  .futuro_info {
+    width: 65%;
+  }
+
+  .futuro_steps_item_res {
+    display: none;
+  }
+
+  .futuro_info_item {
+    color: #fff;
+    height: 0px;
+    opacity: 0;
+    margin: auto;
+    /* transition: 0.5s; */
+  }
+
+  .futuro_info_item_expanded {
+    height: 100%;
+    /* display: block; */
+    opacity: 1;
+  }
+
+  .preguntas {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .preguntas_item {
+    width: 50%;
+    padding: 0 20px;
+  }
+
+  .preguntas_item h4 {
+    font-size:
+  }
+
+  .pasos_flex {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+  }
+
+  .paso_item {
+    margin: 0;
+  }
+
+  .paso_item img {
+    width: 100px;
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .paso_info {
+    display: inline-block;
+    width: 68%;
+    vertical-align: middle;
+  }
+
+  .paso_info h3 {
+    text-transform: uppercase;
+    margin: 5px 0;
+  }
+
+
+  /* --------- */
+
   /* FUTURO ITEMS EXPAND */
+
+  .futuro__items {
+    margin: 40% 0;
+  }
 
   .futuroExpander {
       display: block;
@@ -446,7 +593,7 @@
 
   .futuroExpander .futuro__expander-head {
       display: inline-block;
-      width: 40%;
+      /* width: 40%; */
       cursor:pointer;
       vertical-align: top;
   }
@@ -475,7 +622,7 @@
       left: 50%;
   }
 
-  .futuroExpander .futuro__expander-content p {
+  .futuroExpander .futuro__expander-content  {
       font-size: 1rem;
   }
 
@@ -489,7 +636,11 @@
   }
 
   .content-tres {
-    top: -400%;
+    top: -1000%;
+  }
+
+  .content-tres p {
+    font-size: 0.7rem;
   }
 
   /* PASOS FLEX */
@@ -500,6 +651,9 @@
     display: inline-block;
     vertical-align: middle;
   }
+
+
+  /* -------- */
 
   /* CONTACT SECTION */
 
